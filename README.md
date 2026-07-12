@@ -1,10 +1,10 @@
-﻿# AegisEV ðŸ›¡ï¸âš¡
+﻿# AegisEV 
 
 **AI Powered EV Battery Telemetry Security and Intrusion Detection Platform**
 
 AegisEV is a production grade Electric Vehicle cybersecurity platform designed for automotive Security Operations Center teams. It correlates real time CAN bus telemetry, physics based battery degradation metrics, and network intrusion data to detect, explain, and mitigate cyber physical attacks on EV infrastructure.
 
-![AegisEV Dashboard](https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield.svg) *(Screenshot placeholder add your dashboard screenshot here!)*
+![AegisEV Dashboard](https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield.svg) 
 
 ### Key Features
 
