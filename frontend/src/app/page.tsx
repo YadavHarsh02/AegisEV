@@ -6,8 +6,9 @@ export default function Home() {
       <div className="max-w-7xl mx-auto space-y-6">
         <header className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-800 pb-4">
           <div>
-            <h1 className="text-3xl font-bold tracking-tight text-white flex items-center gap-2">
-              <span className="text-blue-500">Aegis</span>EV
+            <h1 className="text-3xl font-bold tracking-tight text-white flex items-center gap-3">
+              <img src="/logo.png" alt="AegisEV Logo" className="w-10 h-10 rounded-xl shadow-lg border border-slate-700" />
+              <span><span className="text-blue-500">Aegis</span>EV</span>
             </h1>
             <p className="text-slate-400 mt-1 text-sm md:text-base">AI-Powered EV Battery Telemetry Security & Intrusion Detection Platform</p>
           </div>
