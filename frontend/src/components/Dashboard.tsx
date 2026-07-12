@@ -7,7 +7,8 @@ import { Activity, AlertTriangle, ShieldAlert, Cpu, Zap, Thermometer, Shield, Sh
 import { format } from 'date-fns';
 import Link from 'next/link';
 
-const WS_URL = "ws://localhost:8000/ws";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const WS_URL = API_URL.replace(/^http/, 'ws') + "/ws";
 
 export default function Dashboard() {
   const [telemetryHistory, setTelemetryHistory] = useState<any[]>([]);
@@ -65,11 +66,11 @@ export default function Dashboard() {
     }
   }, [incidentMsg]);
 
-  const handleStartSim = () => fetch('http://localhost:8000/api/simulator/start', { method: 'POST' });
-  const handleStopSim = () => fetch('http://localhost:8000/api/simulator/stop', { method: 'POST' });
+  const handleStartSim = () => fetch(`${API_URL}/api/simulator/start`, { method: 'POST' });
+  const handleStopSim = () => fetch(`${API_URL}/api/simulator/stop`, { method: 'POST' });
   
   const triggerAttack = (type: string) => {
-    fetch('http://localhost:8000/api/attack/trigger', {
+    fetch(`${API_URL}/api/attack/trigger`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ attack_type: type, duration: 10 })

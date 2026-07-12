@@ -12,12 +12,13 @@ import Link from 'next/link';
 export default function VehicleInvestigation({ params }: { params: { id: string } }) {
     const [profile, setProfile] = useState<any>(null);
     const [liveTelemetry, setLiveTelemetry] = useState<any>(null);
-    const WS_URL = "ws://localhost:8000/ws";
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+    const WS_URL = API_URL.replace(/^http/, 'ws') + "/ws";
     
     const { lastJsonMessage: telemetryMsg } = useWebSocket(`${WS_URL}/telemetry`, { shouldReconnect: () => true });
     
     useEffect(() => {
-        fetch(`http://localhost:8000/api/vehicle/${params.id}`)
+        fetch(`${API_URL}/api/vehicle/${params.id}`)
             .then(res => res.json())
             .then(data => {
                 setProfile(data);
