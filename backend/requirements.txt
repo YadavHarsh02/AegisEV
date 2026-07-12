@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+motor
+pymongo
+scikit-learn
+websockets
+pydantic
+pydantic-settings
+python-dotenv
