@@ -52,9 +52,8 @@ Python 3.10+
    docker compose up -d --build
    ```
 
-3. Access the platform:
-   **Frontend Dashboard**: http://localhost:3000
-   **Backend API Docs**: http://localhost:8000/docs
+3. Access the platform: https://aegis-ev.vercel.app/
+  
 
 ### System Architecture
 
