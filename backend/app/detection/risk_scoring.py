@@ -1,4 +1,4 @@
-from app.models.schemas import RiskScore
+﻿from app.models.schemas import RiskScore
 from app.database.mongodb import db_client
 from datetime import datetime, timedelta, timezone
 import asyncio
@@ -70,3 +70,4 @@ class RiskScoringEngine:
             await asyncio.sleep(5.0)
 
 risk_engine = RiskScoringEngine()
+

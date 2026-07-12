@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 import random
 from datetime import datetime, timezone
 from app.models.schemas import TelemetryData
@@ -103,3 +103,4 @@ class TelemetrySimulator:
             await asyncio.sleep(1.0)
 
 telemetry_sim = TelemetrySimulator()
+

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException
+﻿from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException
 from typing import List
 from app.websocket.manager import ws_manager
 from app.simulator.telemetry import telemetry_sim
@@ -108,3 +108,4 @@ async def websocket_endpoint(websocket: WebSocket, channel: str):
             await websocket.receive_text()
     except WebSocketDisconnect:
         ws_manager.disconnect(websocket, channel)
+

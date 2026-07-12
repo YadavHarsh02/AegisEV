@@ -1,4 +1,4 @@
-from fastapi import WebSocket
+﻿from fastapi import WebSocket
 from typing import List, Dict
 
 class ConnectionManager:
@@ -37,3 +37,4 @@ class ConnectionManager:
                 self.disconnect(conn, channel)
 
 ws_manager = ConnectionManager()
+

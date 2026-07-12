@@ -1,4 +1,4 @@
-import random
+﻿import random
 
 class AIExplanationEngine:
     def explain_anomaly(self, anomaly_type: str, features: dict) -> dict:
@@ -30,3 +30,4 @@ class AIExplanationEngine:
         return "Conduct full system diagnostic."
 
 explanation_engine = AIExplanationEngine()
+

@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+﻿from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from app.config import settings
@@ -35,3 +35,4 @@ async def root():
     return {"message": "Welcome to AegisEV API"}
 
 app.include_router(api_router)
+

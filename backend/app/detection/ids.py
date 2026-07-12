@@ -1,4 +1,4 @@
-from app.models.schemas import CANMessage, ThreatEvent, TelemetryData
+﻿from app.models.schemas import CANMessage, ThreatEvent, TelemetryData
 from app.database.mongodb import db_client
 from datetime import datetime, timezone
 from app.detection.explanation import explanation_engine
@@ -54,7 +54,7 @@ class IntrusionDetectionSystem:
                 vehicle_id=telemetry.vehicle_id,
                 threat_type="TemperatureManipulation",
                 risk_level="High",
-                details=f"Temperature sensor manipulation suspected: {telemetry.battery_temperature}°C"
+                details=f"Temperature sensor manipulation suspected: {telemetry.battery_temperature}Â°C"
             ))
              
         if telemetry.battery_voltage < 300 or telemetry.battery_voltage > 420:
@@ -71,3 +71,4 @@ class IntrusionDetectionSystem:
         return threats
 
 ids = IntrusionDetectionSystem()
+

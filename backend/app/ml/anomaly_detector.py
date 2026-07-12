@@ -1,4 +1,4 @@
-import numpy as np
+﻿import numpy as np
 from sklearn.ensemble import IsolationForest
 from app.models.schemas import TelemetryData, Anomaly
 from app.database.mongodb import db_client
@@ -80,3 +80,4 @@ class AIBatteryAnomalyDetector:
         return None
 
 ai_detector = AIBatteryAnomalyDetector()
+

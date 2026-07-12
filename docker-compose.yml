@@ -1,4 +1,4 @@
-version: '3.8'
+﻿version: '3.8'
 
 services:
   mongodb:
@@ -39,3 +39,4 @@ services:
 
 volumes:
   mongodb_data:
+

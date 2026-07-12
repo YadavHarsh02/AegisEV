@@ -1,4 +1,4 @@
-from datetime import datetime, timezone, timedelta
+﻿from datetime import datetime, timezone, timedelta
 import uuid
 from typing import List, Dict
 from app.models.schemas import Incident
@@ -79,3 +79,4 @@ class IncidentCorrelationEngine:
         self.event_buffer = [e for e in self.event_buffer if (now - e["timestamp"]).total_seconds() < 300]
 
 correlation_engine = IncidentCorrelationEngine()
+

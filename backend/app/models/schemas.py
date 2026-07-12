@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+﻿from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 
@@ -69,3 +69,4 @@ class Incident(BaseModel):
     root_cause_chain: List[str]
     confidence_score: float
     recommended_action: str
+

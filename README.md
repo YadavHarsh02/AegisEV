@@ -1,4 +1,4 @@
-# AegisEV 🛡️⚡
+﻿# AegisEV ðŸ›¡ï¸âš¡
 
 **AI Powered EV Battery Telemetry Security and Intrusion Detection Platform**
 
@@ -76,3 +76,4 @@ Once the platform is running and the simulator is started via the dashboard, you
 ### License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+

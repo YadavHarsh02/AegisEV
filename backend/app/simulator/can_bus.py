@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 import random
 from datetime import datetime, timezone
 from app.models.schemas import CANMessage
@@ -94,3 +94,4 @@ class CANBusSimulator:
             await asyncio.sleep(1.0)
 
 can_bus_sim = CANBusSimulator()
+

@@ -1,4 +1,4 @@
-from app.models.schemas import TelemetryData, CANMessage, Alert
+﻿from app.models.schemas import TelemetryData, CANMessage, Alert
 
 class SecurityLayer:
     def __init__(self):
@@ -22,7 +22,7 @@ class SecurityLayer:
                     vehicle_id=telemetry.vehicle_id,
                     alert_type="CriticalTemperature",
                     severity="Critical",
-                    description=f"Battery temperature exceeded safe limits: {telemetry.battery_temperature}°C",
+                    description=f"Battery temperature exceeded safe limits: {telemetry.battery_temperature}Â°C",
                     raw_data=data
                 ))
         except Exception as e:
@@ -68,3 +68,4 @@ class SecurityLayer:
         return alerts
 
 security_layer = SecurityLayer()
+
